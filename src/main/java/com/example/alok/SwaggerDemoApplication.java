@@ -56,7 +56,7 @@ public class SwaggerDemoApplication {
 					}
 				}
 		);
-
+		
 		if (splitString != null) {
 			for (String str : splitString) {
 				if (str.matches(".*[A-Z]|[A-Z].*")) {
@@ -108,7 +108,7 @@ class myResource {
 	@GetMapping("/name")
 	@ApiResponses(value = @ApiResponse(code = 300, message = "Unable to find Name"))
 	ResponseEntity<String> getName() {
-		return new ResponseEntity("this is my Name",HttpStatus.OK);
+		return new ResponseEntity<String>("this is my Name",HttpStatus.OK);
 	}
 
 }
