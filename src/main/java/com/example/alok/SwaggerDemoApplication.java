@@ -106,7 +106,7 @@ class swaggerConfig {
 class myResource {
 
 	@GetMapping("/name")
-	@ApiResponses(value = @ApiResponse(code = 300, message = "Unable to find Name"))
+	@ApiResponses(value = @ApiResponse(code = 300, message = "successfull to find Name"))
 	ResponseEntity<String> getName() {
 		return new ResponseEntity<String>("this is my Name",HttpStatus.OK);
 	}
